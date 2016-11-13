@@ -11,7 +11,7 @@
  */
 ?>
 <div class="payeer-checkout">
-    <p><?= \Yii::t('Payeer', 'Now you will be redirected to the payment system.') ?></p>
+    <p><?= 'Now you will be redirected to the payment system.'; ?></p>
     <form id="payeer-checkout-form" method="GET" action="//payeer.com/merchant/">
         <input type="hidden" name="m_shop" value="<?= $api->merchantId ?>">
         <input type="hidden" name="m_orderid" value="<?= $invoiceId ?>">
